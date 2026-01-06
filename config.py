@@ -16,3 +16,7 @@ class Config:
     
     # Toggle for development on non-GPU machines
     USE_MOCK_LLM = os.getenv('USE_MOCK_LLM', 'False').lower() == 'true'
+
+  
+    DOCS_PATH = os.getenv('DOCS_PATH', 'data/docs')
+    REDIS_URL = os.getenv('REDIS_URL', 'redis://localhost:6379/0')
