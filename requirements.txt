@@ -1,0 +1,16 @@
+Flask==3.0.0
+Flask-Login==0.6.3
+Flask-SQLAlchemy==3.1.1
+Werkzeug==3.0.1
+qdrant-client==1.7.0
+sentence-transformers==2.2.2
+langchain==0.1.0
+langchain-community==0.0.10
+pypdf==3.17.0
+python-dotenv==1.0.0
+redis==5.0.1
+# Note: vLLM requires Linux and NVidia GPU. 
+# If running on Mac/Windows CPU, comment out vllm and use a mock in rag.py
+vllm==0.2.7 
+torch==2.1.2
+pytest==7.4.3
