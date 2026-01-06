@@ -26,9 +26,35 @@ A high-performance RAG (Retrieval-Augmented Generation) web application tailored
 
 ## 🛠️ Environment Setup
 
-1. **Clone the Repo**
+2. **Clone the Repo**
    ```bash
    python -m venv venv
    source venv/bin/activate  # or venv\Scripts\activate on Windows
    pip install -r requirements.txt
    cp .env.example .env
+
+## Start Infrastructure (Qdrant & Redis)
+
+3. **Clone the Repo**
+   ```bash
+   docker-compose up -d qdrant redis
+
+## Ingest Documents Place your PDFs in data/docs/ and run:
+
+4. **Clone the Repo**
+   ```bash
+   python ingest.py
+
+## Ingest Documents Place your PDFs in data/docs/ and run:
+
+5. **Clone the Repo**
+   ```bash
+   # Initialize DB (Run once)
+   python -c "from app import setup; print(setup())"
+
+   # Start Server
+   python app.py
+
+
+
+   
