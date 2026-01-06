@@ -23,3 +23,11 @@ A high-performance RAG (Retrieval-Augmented Generation) web application tailored
    ```bash
    git clone [https://github.com/victordeman/fast-Insight-Retriever-.git](https://github.com/victordeman/fast-Insight-Retriever-.git)
    cd fast-Insight-Retriever
+
+## 🛠️ Environment Setup
+
+### Prerequisites
+- python -m venv venv
+- source venv/bin/activate  # or venv\Scripts\activate on Windows
+- pip install -r requirements.txt
+- cp .env.example .env
