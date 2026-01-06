@@ -10,6 +10,31 @@ A high-performance RAG (Retrieval-Augmented Generation) web application tailored
 - **Responsive UI:** Mobile-first design using Tailwind CSS.
 - **Scalable:** Dockerized, with Redis caching support.
 
+## Repository Structure
+
+```
+fast-Insight-Retriever/
+├── app.py                   # Main Flask app
+├── rag.py                   # RAG logic (Qdrant + vLLM)
+├── ingest.py                # Document ingestion pipeline
+├── requirements.txt         # Dependencies
+├── Dockerfile               # Application container
+├── docker-compose.yml       # Services (App + Qdrant + Redis)
+├── .gitignore               # Git ignore rules
+├── README.md                # Documentation
+├── config.py                # Configuration management
+├── .env.example             # Environment variable template
+├── templates/
+│   ├── index.html           # Main Chat Interface
+│   └── login.html           # Login Interface
+├── static/
+│   └── js/
+│       └── app.js           # Frontend Logic
+└── tests/
+    ├── test_rag.py
+    └── test_app.py
+```
+
 ## 🛠️ Setup
 
 ### Prerequisites
